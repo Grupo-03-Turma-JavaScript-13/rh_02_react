@@ -52,7 +52,7 @@ export const colaboradors: colaborador[] = [
     email: "renan@gmail.com",
     admissao: new Date("2025-01-15"),
     demissao: null,
-    imagem: "/img/Renan.png",
+    imagem: "/img/Renan_Soares.JPG",
     ativo: "Sim",
   },
   {
@@ -63,7 +63,7 @@ export const colaboradors: colaborador[] = [
     email: "evelyn@gmail.com",
     admissao: new Date("2026-01-15"),
     demissao: null,
-    imagem: "/img/Evelyn.jpg",
+    imagem: "/img/Evelyn_Lamarca.JPG",
     ativo: "Sim",
   },
   {
