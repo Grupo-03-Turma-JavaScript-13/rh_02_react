@@ -13,6 +13,8 @@ import {
 } from "./services/Services";
 
 import type { colaborador } from "./data/Data";
+import Footer from "./components/footer/Footer";
+import Sobre from "./pages/sobre/Sobre";
 
 function App() {
 
@@ -78,7 +80,22 @@ function App() {
             />
           }
         />
+        <Route
+          path="/home"
+          element={
+            <Home
+              dadosFiltrados={dadosFiltrados}
+              listaDecolaboradors={listaDecolaboradors}
+              tituloInicio={tituloInicio}
+              tituloGeral={tituloGeral}
+              textoBuscaDigitado={textoBuscaDigitado}
+              handleBusca={handleBusca}
+            />
+          }
+        />
+        <Route path='/sobre' element={<Sobre />} />
       </Routes>
+    <Footer />
     </BrowserRouter>
   );
 }
