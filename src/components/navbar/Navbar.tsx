@@ -33,7 +33,7 @@ const Navbar = ({
 
                             onClick={() => handleFiltro("Não")}
                         >
-                            Demitidos
+                            Desligados
                         </button>
 
                     </ul>
