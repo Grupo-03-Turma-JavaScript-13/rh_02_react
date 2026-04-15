@@ -18,7 +18,7 @@ const Navbar = ({ handleFiltro, handleLimparBusca }: cargosProps) => {
                     />
                 </div>
 
-                <h1 className="absolute left-1/2 -translate-x-1/2 text-2xl font-bold">
+                <h1 className="absolute left-1/2 -translate-x-1/2 text-2xl font-bold hidden md:block">
                     Painel de Colaboradores
                 </h1>
 
