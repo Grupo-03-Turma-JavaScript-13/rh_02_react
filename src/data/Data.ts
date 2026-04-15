@@ -80,7 +80,7 @@ export const colaboradors: colaborador[] = [
 
   {
     id: 7,
-    nome: "Julia",
+    nome: "Julia Barreto",
     cargo: "Desenvolvedor",
     matricula: 23907,
     email: "julia@gmail.com",
