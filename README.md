@@ -16,38 +16,45 @@ O projeto foi construído com foco em componentização, tipagem com TypeScript 
 Principais funcionalidades implementadas:
 
 🔎 Busca dinâmica por colaboradores
-Nome
-Email
-Matrícula
-Cargo
-Status (ativo/demitido)
-Datas de admissão e demissão
-👥 Listagem de colaboradores ativos na Home por padrão
-🚫 Filtro de colaboradores desligados através da Navbar
-🔄 Reset automático da Home ao limpar busca
-🧩 Arquitetura organizada em:
-Components
-Pages
-Services
-Data
+
+Nome<br>
+Email<br>
+Matrícula<br>
+Cargo<br>
+Status (ativo/demitido)<br>
+Datas de admissão e demissão<br>
+
+👥 Listagem de colaboradores ativos na Home por padrão<br>
+
+🚫 Filtro de colaboradores desligados através da Navbar<br>
+
+🔄 Reset automático da Home ao limpar busca<br>
+
+🧩 Arquitetura organizada em:<br>
+
+Components<br>
+
+Pages<br>
+
+Services<br>
+
+Data<br>
+
 🎨 Interface moderna com TailwindCSS
 
-3. Capturas de Tela
-
-Adicione aqui prints da sua aplicação rodando.
-
-Exemplo:
+3. Captura da Tela Principal
 
 <div align="center"> <img src="tela_rv_rh" width="50%"/> </div>
 
-4. Tecnologias
-Item	Descrição
-Servidor	Node.js
-Linguagem	TypeScript
-Biblioteca	React
-Build Tool	Vite
-Estilização	TailwindCSS
-Roteamento	React Router DOM
+4. Tecnologias<br>
+
+Item	        Descrição<br>
+Servidor	    Node.js<br>
+Linguagem	    TypeScript<br>
+Biblioteca	  React<br>
+Build Tool	  Vite<br>
+Estilização	  TailwindCSS<br>
+Roteamento	  React Router DOM<br>
 
 5. Pré-requisitos
 
@@ -74,40 +81,40 @@ http://localhost:5173
 
 7. Estrutura do Projeto
 
-src/
+src/<br>
 │
-├── components/
-│   ├── Cards/           # Card de colaborador
-│   ├── CampoDeBusca/    # Barra de busca
-│   └── Navbar/          # Filtro de status
+├── components/<br>
+│   ├── Cards/           # Card de colaborador<br>
+│   ├── CampoDeBusca/    # Barra de busca<br>
+│   └── Navbar/          # Filtro de status<br>
 │
-├── data/
-│   └── Data.ts          # Base mockada de colaboradores
+├── data/<br>
+│   └── Data.ts          # Base mockada de colaboradores<br>
 │
 ├── pages/
-│   └── home/            # Página principal
+│   └── home/            # Página principal<br>
 │
 ├── services/
-│   └── Services.ts      # Regras de negócio e filtros
+│   └── Services.ts      # Regras de negócio e filtros<br>
 │
-├── App.tsx              # Rotas e estado global da Home
-└── main.tsx             # Entrada da aplicação
+├── App.tsx              # Rotas e estado global da Home<br>
+└── main.tsx             # Entrada da aplicação<br>
 
 
 8. Regras de Negócio
 
-✔️ A Home inicia mostrando apenas colaboradores ativos
-✔️ Colaboradores desligados aparecem somente quando:
+✔️ A Home inicia mostrando apenas colaboradores ativos<br>
+✔️ Colaboradores desligados aparecem somente quando:<br>
 
-Pesquisados na busca
-Filtrados pelo botão Desligados
+Pesquisados na busca<br>
+Filtrados pelo botão Desligados<br>
 
-9. Como Contribuir
-Faça um fork do projeto
-Crie uma branch
-git checkout -b minha-feature
-Commit suas mudanças
-git commit -m "Nova feature"
-Push
-git push origin minha-feature
-Abra um Pull Request 🚀
+9. Como Contribuir<br>
+Faça um fork do projeto<br>
+Crie uma branch<br>
+git checkout -b minha-feature<br>
+Commit suas mudanças<br>
+git commit -m "Nova feature"<br>
+Push<br>
+git push origin minha-feature<br>
+Abra um Pull Request 🚀<br>
