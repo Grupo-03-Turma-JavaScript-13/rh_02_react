@@ -45,7 +45,7 @@ function App() {
     setTextoBuscaDigitado("");
     setDadosFiltrados(filtrarPorStatus(status));
     setListaDecolaboradors([]);
-    setTituloInicio(status === "Sim" ? "Colaboradores Ativos" : "Colaboradores Demitidos");
+    setTituloInicio(status === "Sim" ? "Colaboradores Ativos" : "Colaboradores Desligados");
   };
 
   // 🟢 BOTÃO ATIVOS (RESET HOME)
