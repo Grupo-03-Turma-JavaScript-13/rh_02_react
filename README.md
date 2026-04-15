@@ -44,7 +44,7 @@ Data<br>
 
 3. Captura da Tela Principal
 
-<div align="center"> <img src="tela_rv_rh" width="50%"/> </div>
+<div align="center"> <img src="/img/tela_rv_rh.PNG" width="50%"/> </div>
 
 4. Tecnologias<br>
 
