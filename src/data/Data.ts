@@ -13,7 +13,7 @@ export type colaborador = {
 export const colaboradors: colaborador[] = [
   {
     id: 1,
-    nome: "Josue",
+    nome: "Josue Viegas",
     cargo: "Scrum Master",
     matricula: 11721,
     email: "josue@gmail.com",
@@ -24,7 +24,7 @@ export const colaboradors: colaborador[] = [
   },
   {
     id: 2,
-    nome: "Erick",
+    nome: "Erick Santana",
     cargo: "Desenvolvedor",
     matricula: 50847,
     email: "erick@gmail.com",
@@ -35,7 +35,7 @@ export const colaboradors: colaborador[] = [
   },
   {
     id: 3,
-    nome: "Livia",
+    nome: "Livia Campos",
     cargo: "Desenvolvedor",
     matricula: 29385,
     email: "livia@gmail.com",
@@ -46,7 +46,7 @@ export const colaboradors: colaborador[] = [
   },
   {
     id: 4,
-    nome: "Renan",
+    nome: "Renan Lima",
     cargo: "Desenvolvedor",
     matricula: 20926,
     email: "renan@gmail.com",
@@ -57,7 +57,7 @@ export const colaboradors: colaborador[] = [
   },
   {
     id: 5,
-    nome: "Evelyn",
+    nome: "Evelyn Lamarca",
     cargo: "Desenvolvedor",
     matricula: 21684,
     email: "evelyn@gmail.com",
@@ -68,7 +68,7 @@ export const colaboradors: colaborador[] = [
   },
   {
     id: 6,
-    nome: "Matheus",
+    nome: "Matheus Bastos",
     cargo: "Desenvolvedor",
     matricula: 23907,
     email: "matheus@gmail.com",
