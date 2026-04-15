@@ -1,73 +1,113 @@
-# React + TypeScript + Vite
+River RH - Frontend
+<br /> <div align="center"> <img src="https://i.imgur.com/AzshGmS.png" width="50%"/> </div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br /><br />
 
-Currently, two official plugins are available:
+1. Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O River RH é uma aplicação frontend desenvolvida em React para gerenciamento e visualização de colaboradores de uma empresa.
 
-## React Compiler
+A aplicação permite pesquisar colaboradores por diversos campos, filtrar por status (ativos ou desligados) e visualizar informações detalhadas como matrícula, cargo, datas de admissão e demissão.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto foi construído com foco em componentização, tipagem com TypeScript e estilização moderna com TailwindCSS.
 
-## Expanding the ESLint configuration
+2. Recursos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Principais funcionalidades implementadas:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔎 Busca dinâmica por colaboradores
+Nome
+Email
+Matrícula
+Cargo
+Status (ativo/demitido)
+Datas de admissão e demissão
+👥 Listagem de colaboradores ativos na Home por padrão
+🚫 Filtro de colaboradores desligados através da Navbar
+🔄 Reset automático da Home ao limpar busca
+🧩 Arquitetura organizada em:
+Components
+Pages
+Services
+Data
+🎨 Interface moderna com TailwindCSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. Capturas de Tela
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Adicione aqui prints da sua aplicação rodando.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Exemplo:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<div align="center"> <img src="tela_rv_rh" width="50%"/> </div>
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. Tecnologias
+Item	Descrição
+Servidor	Node.js
+Linguagem	TypeScript
+Biblioteca	React
+Build Tool	Vite
+Estilização	TailwindCSS
+Roteamento	React Router DOM
+
+5. Pré-requisitos
+
+Antes de iniciar, instale:
+
+Node.js (v16 ou superior)
+npm ou yarn
+
+6. Configuração e Execução
+1️⃣ Clone o repositório
+git clone <url-do-repositorio>
+
+2️⃣ Entre na pasta do projeto
+cd rh_02_react
+
+3️⃣ Instale as dependências
+npm install
+
+4️⃣ Execute o projeto
+npm run dev
+
+5️⃣ Acesse no navegador
+http://localhost:5173
+
+7. Estrutura do Projeto
+
+src/
+│
+├── components/
+│   ├── Cards/           # Card de colaborador
+│   ├── CampoDeBusca/    # Barra de busca
+│   └── Navbar/          # Filtro de status
+│
+├── data/
+│   └── Data.ts          # Base mockada de colaboradores
+│
+├── pages/
+│   └── home/            # Página principal
+│
+├── services/
+│   └── Services.ts      # Regras de negócio e filtros
+│
+├── App.tsx              # Rotas e estado global da Home
+└── main.tsx             # Entrada da aplicação
+
+
+8. Regras de Negócio
+
+✔️ A Home inicia mostrando apenas colaboradores ativos
+✔️ Colaboradores desligados aparecem somente quando:
+
+Pesquisados na busca
+Filtrados pelo botão Desligados
+
+9. Como Contribuir
+Faça um fork do projeto
+Crie uma branch
+git checkout -b minha-feature
+Commit suas mudanças
+git commit -m "Nova feature"
+Push
+git push origin minha-feature
+Abra um Pull Request 🚀
