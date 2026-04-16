@@ -93,7 +93,7 @@ function App() {
             />
           }
         />
-        <Route path='/sobre' element={<Sobre />} />
+        <Route path='/sobre' element={<Sobre colaboradores={dadosFiltrados} />} />
       </Routes>
     <Footer />
     </BrowserRouter>

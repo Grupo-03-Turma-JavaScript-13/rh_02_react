@@ -1,6 +1,8 @@
 import type { colaborador } from "../../data/Data";
-
-export default function Sobre(colaborador: colaborador[]) {
+type SobreProps= {
+  colaboradores: colaborador[]
+}
+export default function Sobre({ colaboradores }: SobreProps) {
 
   return (
     <div className="min-h-screen bg-white text-indigo-400 font-roboto antialiased">
@@ -50,11 +52,11 @@ export default function Sobre(colaborador: colaborador[]) {
         {/* Grid do Time */}
         <h2 className="font-montserrat text-2xl font-bold mb-8 text-center md:text-left">Conheça o Time</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {colaborador.map((colaborador, index) => (
+          {colaboradores.map((colaborador, index) => (
             <div key={index} className="group relative bg-[#10141d] border border-white/5 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:border-indigo-500/50 hover:shadow-[0_0_30px_rgba(56,189,248,0.1)]">
               
               {/* Container da Imagem */}
-              <a href={colaborador.linkedin} target="_blank" className="aspect-[4/5] overflow-hidden">
+              <a href={colaborador.linkedin} target="_blank" className="aspect-4/5 overflow-hidden">
                 <img 
                   src={colaborador.imagem} 
                   alt={colaborador.nome}
