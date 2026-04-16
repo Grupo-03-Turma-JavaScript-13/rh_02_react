@@ -64,7 +64,7 @@ export default function Sobre(colaborador: colaborador[]) {
               </a>
 
               {/* Legenda (Caption) */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-linear-to-t from-black via-black/80 to-transparent">
                 <p className="font-montserrat text-2xl font-extrabold text-white mb-1">
                   {colaborador.nome}
                 </p>

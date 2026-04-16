@@ -16,7 +16,7 @@ const Navbar = ({ handleFiltro, handleLimparBusca }: cargosProps) => {
                     <img
                         src="/img/river_rh_logo.png"
                         alt="Logo River RH"
-                        className="w-50 h-20 object-cover"
+                        className="w-20 h-20 object-cover hidden min-[425px]:block"
                     />
                 </Link>
 
