@@ -60,7 +60,7 @@ export default function Sobre() {
             <div key={index} className="group relative bg-[#10141d] border border-white/5 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:border-indigo-500/50 hover:shadow-[0_0_30px_rgba(56,189,248,0.1)]">
               
               {/* Container da Imagem */}
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-4/5 overflow-hidden">
                 <img 
                   src={member.img} 
                   alt={member.name}
@@ -70,7 +70,7 @@ export default function Sobre() {
               </div>
 
               {/* Legenda (Caption) */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-linear-to-t from-black via-black/80 to-transparent">
                 <p className="font-montserrat text-2xl font-extrabold text-white mb-1">
                   {member.name}
                 </p>
