@@ -8,6 +8,9 @@ export type colaborador = {
   demissao: null | Date;
   imagem: string;
   ativo: string;
+  linkedin?: string;
+  isBrand?: boolean;
+  icon?:string; 
 };
 
 export const colaboradors: colaborador[] = [
@@ -21,6 +24,8 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Josue.jpg",
     ativo: "Sim",
+    linkedin: "https://www.linkedin.com/in/josue-viegas-desenvolvedor-web/",
+    icon: "fa-server",
   },
   {
     id: 2,
@@ -32,6 +37,8 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Erick_Santana.JPG",
     ativo: "Sim",
+    linkedin:"https://www.linkedin.com/in/erickystn/",
+    icon: "fa-cloud",
   },
   {
     id: 3,
@@ -43,6 +50,8 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Livia.png",
     ativo: "Sim",
+    linkedin:"https://www.linkedin.com/in/livmachado/",
+    icon: "fa-code"
   },
   {
     id: 4,
@@ -54,6 +63,8 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Renan_Soares.JPG",
     ativo: "Sim",
+    linkedin:"https://www.linkedin.com/in/renanferreiralima",
+    icon: "fa-database",
   },
   {
     id: 5,
@@ -65,6 +76,8 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Evelyn_Lamarca.JPG",
     ativo: "Sim",
+    linkedin:"https://www.linkedin.com/in/evelyn-lamarca/" ,
+    icon: "fa-shield-halved",
   },
   {
     id: 6,
@@ -76,6 +89,9 @@ export const colaboradors: colaborador[] = [
     demissao: null,
     imagem: "/img/Matheus.png",
     ativo: "Sim",
+    linkedin:"https://www.linkedin.com/in/matheus-moura-bastos",
+    isBrand: true,
+    icon: "fa-react",
   },
 
   {

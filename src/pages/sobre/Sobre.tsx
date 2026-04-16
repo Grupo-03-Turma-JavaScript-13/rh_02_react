@@ -1,12 +1,6 @@
-export default function Sobre() {
-  const time = [
-    { name: "Josué Viegas", role: "Scrum Master", icon: "fa-server", img: "https://rh-02-react.vercel.app/img/Josue.jpg" },
-    { name: "Erick Santana", role: "Desenvolvedor", icon: "fa-cloud", img: "https://rh-02-react.vercel.app/img/Erick_Santana.JPG" },
-    { name: "Livia Campos", role: "Desenvolvedora", icon: "fa-code", img: "https://rh-02-react.vercel.app/img/Livia.png" },
-    { name: "Renan Lima", role: "Desenvolvedor", icon: "fa-database", img: "https://ik.imagekit.io/leu4crxxao/games/fotocorporativa%20(1).png" },
-    { name: "Evelyn Lamarca", role: "Desenvolvedora", icon: "fa-shield-halved", img: "https://rh-02-react.vercel.app/img/Evelyn_Lamarca.JPG" },
-    { name: "Matheus Bastos", role: "Desenvolvedor", icon: "fa-react", img: "https://rh-02-react.vercel.app/img/Matheus.png", isBrand: true },
-  ];
+import type { colaborador } from "../../data/Data";
+
+export default function Sobre(colaborador: colaborador[]) {
 
   return (
     <div className="min-h-screen bg-white text-indigo-400 font-roboto antialiased">
@@ -56,27 +50,27 @@ export default function Sobre() {
         {/* Grid do Time */}
         <h2 className="font-montserrat text-2xl font-bold mb-8 text-center md:text-left">Conheça o Time</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {time.map((member, index) => (
+          {colaborador.map((colaborador, index) => (
             <div key={index} className="group relative bg-[#10141d] border border-white/5 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:border-indigo-500/50 hover:shadow-[0_0_30px_rgba(56,189,248,0.1)]">
               
               {/* Container da Imagem */}
-              <div className="aspect-[4/5] overflow-hidden">
+              <a href={colaborador.linkedin} target="_blank" className="aspect-[4/5] overflow-hidden">
                 <img 
-                  src={member.img} 
-                  alt={member.name}
+                  src={colaborador.imagem} 
+                  alt={colaborador.nome}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   style={{ objectPosition: 'center 15%' }} 
                 />
-              </div>
+              </a>
 
               {/* Legenda (Caption) */}
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
                 <p className="font-montserrat text-2xl font-extrabold text-white mb-1">
-                  {member.name}
+                  {colaborador.nome}
                 </p>
                 <p className="font-montserrat text-[10px] font-bold text-indigo-400 uppercase tracking-[0.2em] flex items-center gap-2">
-                  <i className={`fa-solid ${member.icon} ${member.isBrand ? 'fa-brands' : ''} text-xs`}></i>
-                  {member.role}
+                  <i className={`fa-solid ${colaborador.icon} ${colaborador.isBrand ? 'fa-brands' : ''} text-xs`}></i>
+                  {colaborador.cargo}
                 </p>
               </div>
             </div>
